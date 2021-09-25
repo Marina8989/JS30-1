@@ -1,12 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
+html {
   font-size: 10px;
-  background: linear-gradient(to bottom, rgb(93, 148, 250), rgb(2, 53, 110));
+  background: linear-gradient(to bottom, rgb(111, 157, 241), rgb(1, 44, 92));
   background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 .keys{
     display: flex;
@@ -16,20 +17,31 @@ body{
     justify-content: center;
 }
 .key{
-    border-radius: .5rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
-    transition: all .07s ease;
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 .5rem black;
-    background: linear-gradient(to bottom, rgba(255,255,255, 0.2), rgba(255, 255, 255, 0.05));
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5), -1px -1px 2px #aaa, 1px 1px 2px #555;
-    backdrop-filter: blur(0.8rem);
-    animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardEnter;
-    height: 50px;
-    cursor: pointer;
+    /* border: .4rem solid black; */
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  /* width: 10rem; */
+  text-align: center;
+  color: white;
+  /* background: rgba(0,0,0,0.4); */
+  text-shadow: 0 0 .5rem black;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
+    1px 1px 2px #555;
+  backdrop-filter: blur(0.8rem);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardEnter;
+  /* width: 600px; */
+  height: 50px;
+  cursor: pointer;
 }
 .playing{
     transition: scale(1.1);
